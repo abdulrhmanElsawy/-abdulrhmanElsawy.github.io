@@ -277,8 +277,8 @@ body::-webkit-scrollbar-thumb {
 @media(max-width:560px) {
     .landing-section .whats-happening {
         position: fixed;
-        top: 82%;
-        left: 66%;
+        top: 83%;
+        left: 73%;
         width: 85px;
         height: 85px;
         border-radius: 50%;
