@@ -50,7 +50,6 @@ body::-webkit-scrollbar-thumb {
     width: 157px;
     position: absolute;
     top: 6%;
-    filter: invert(1);
     border-right: 1px solid #000;
     user-select: none;
 }
