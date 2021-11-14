@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 
     next1.onclick = function() {
-        form1.style.left = "-450px";
+        form1.style.left = "-800px";
         form2.style.left = "40px";
         progress.style.width = "240px";
 
@@ -21,19 +21,19 @@ $(document).ready(function() {
 
     back1.onclick = function() {
         form1.style.left = "40px";
-        form2.style.left = "450px";
+        form2.style.left = "800px";
         progress.style.width = "120px";
     }
 
     next2.onclick = function() {
-        form2.style.left = "-450px";
+        form2.style.left = "-800px";
         form3.style.left = "40px";
         progress.style.width = "360px";
     }
 
     back2.onclick = function() {
         form2.style.left = "40px";
-        form3.style.left = "450px";
+        form3.style.left = "800px";
         progress.style.width = "240px";
     }
 
@@ -84,8 +84,21 @@ $(document).ready(function() {
             confirmPassword.style.border = "1px solid green";
             confirmPassword.style.borderRadius = "5px";
         }
-    }
+    };
 
+
+    var EduElement = '<div class="eduback">\
+    <input type="text" placeholder="Degree" required>\
+    <input type="text" placeholder="University" required>\
+    <input type="date" placeholder="Gradutaion Year" required>\
+    </div>';
+
+
+    var eduelementfather = document.getElementById("eduback");
+
+    $("#addedu").click(function() {
+        eduelementfather.appendChild(EduElement);
+    });
 
 
 
