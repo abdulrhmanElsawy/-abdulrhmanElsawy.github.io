@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Cairo', sans-serif;
-    background-color: #fff;
+    background-color: #f5f3ea;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -255,7 +255,7 @@ body::-webkit-scrollbar-thumb {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    background-color: #FCF4D3;
+    background-color: #fff;
     color: #111;
     font-weight: bold;
     font-size: 5px;
@@ -325,15 +325,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 .why-egyptus .container .why-card {
-    background: #FCF4D3;
+    background: #fff;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     box-shadow: 0px 0px 25px -2px rgba(0, 0, 0, 0.19);
-    padding: 5px;
-    margin-bottom: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
     min-height: 234px;
 }
 
@@ -547,40 +547,54 @@ body section.slideshow .detail .detail-item.active {
 
 .about {
     margin-top: 150px;
+    text-align: center;
 }
 
 .about h1 {
-    font-size: 34px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.about h2 {
+    font-size: 40px;
     font-weight: bold;
     color: #d59425;
+    font-size: 18px;
 }
 
 .about p {
     font-size: 17px;
     line-height: 30px;
-}
-
-.about .step span {
-    font-size: 32px;
-    border: 1px solid;
-    padding: 0px;
-    padding-left: 18px;
-    border-radius: 50%;
-    padding-right: 18px;
-}
-
-.about .step h2 {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-.about .step p {
-    font-size: 20px;
-    margin-left: 80px;
+    margin-top: 50px;
+    padding: 0 10%;
 }
 
 
 /* End About Section */
+
+
+/* Start Vision Section */
+
+.vision {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.vision h1 {
+    font-size: 35px;
+}
+
+.vision p {
+    font-size: 17px;
+    margin-top: 23px;
+    line-height: 42px;
+}
+
+
+/* End Vision Section */
 
 
 /* Start Footer Section */
@@ -622,15 +636,17 @@ footer .copy-right {
 .tourguideregpage {
     width: 100%;
     height: 100%;
-    background-image: url("../images/svgbackreg.png");
+    background-image: url("../images/regguideback.JPG");
+    background-position: center;
+    background-size: cover;
     background-color: #111;
     position: fixed;
 }
 
 .tourguideregpage .container {
-    width: 360px;
-    height: 400px;
-    margin: 8% auto;
+    width: 800px;
+    height: 500px;
+    margin: 2% auto;
     background: #fff;
     border-radius: 5px;
     position: relative;
@@ -638,7 +654,25 @@ footer .copy-right {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.tourguideregpage .container::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.tourguideregpage .container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.tourguideregpage .container::-webkit-scrollbar-thumb {
+    background-color: #111;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .tourguideregpage .container h3 {
@@ -648,7 +682,7 @@ footer .copy-right {
 }
 
 .tourguideregpage .container form {
-    width: 280px;
+    width: 900px;
     position: absolute;
     top: 100px;
     left: 40px;
@@ -660,9 +694,9 @@ footer .copy-right {
 }
 
 .tourguideregpage .container form input {
-    width: 100%;
+    width: 40%;
     padding: 10px 5px;
-    margin: 5px 0;
+    margin: 5px 5px;
     border: 0;
     border-bottom: 1px solid #999;
     outline: none;
@@ -670,7 +704,8 @@ footer .copy-right {
 }
 
 .tourguideregpage .container form input::placeholder {
-    color: #777;
+    color: rgb(87, 87, 87);
+    font-size: 18px;
 }
 
 .tourguideregpage .container .btn-box {
@@ -683,12 +718,12 @@ footer .copy-right {
     width: 110px;
     height: 35px;
     margin: 0 10px;
-    background: linear-gradient(to right, #ffad06, #111);
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    background: #ffad06;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
     border: 0;
     outline: none;
     color: #fff;
@@ -696,11 +731,11 @@ footer .copy-right {
 }
 
 #form2 {
-    left: 450px;
+    left: 800px;
 }
 
 #form3 {
-    left: 450px;
+    left: 800px;
 }
 
 .step-row {
@@ -726,7 +761,7 @@ footer .copy-right {
     position: absolute;
     height: 100%;
     width: 120px;
-    background: linear-gradient(to right, #ffad06, #111);
+    background: #ffad06;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -740,7 +775,7 @@ footer .copy-right {
     width: 0;
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
-    border-left: 20px solid #111;
+    border-left: 20px solid #ffad06;
     position: absolute;
     right: -20px;
     top: 0;
@@ -756,6 +791,64 @@ footer .copy-right {
 .backhome a {
     text-decoration: none;
     color: #fff;
+}
+
+@media(max-width:850px) {
+    .tourguideregpage {
+        width: 100%;
+        height: 139%;
+        background-color: #111;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: 0;
+    }
+    .tourguideregpage .container {
+        width: 420px;
+        height: calc(100% - 100px);
+        margin: 2% auto;
+        background: #ffffff;
+        border-radius: 5px;
+        position: relative;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .tourguideregpage .container form input {
+        width: 100%;
+        padding: 10px 5px;
+        margin: 5px 0;
+        border: 0;
+        border-bottom: 1px solid #999;
+        outline: none;
+        background: transparent;
+        margin-left: 0;
+    }
+    .tourguideregpage .container form {
+        width: 335px;
+        position: absolute;
+        top: 100px;
+        left: 40px;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+    }
+}
+
+.eduback {
+    border: 1px solid #111;
+    width: 80%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 15px;
 }
 
 
