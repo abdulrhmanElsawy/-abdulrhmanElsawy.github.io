@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/logo.png" type="image/icon type">
+    <link rel="icon" href="images/titlelogo.png" type="image/icon type">
     <title>Egyptus</title>
 
     <!-- Css Files -->
@@ -33,10 +33,20 @@
 
         <div class="container">
             <form method="POST" id="form1">
-                <h2>Create Account</h2>
+                <h2>Personal Information</h2>
+                <input required="required" id="Fname" type="text" placeholder="First Name">
+                <input required="required" id="Lname" type="text" placeholder="Last Name" required>
+                <input required="required" id="usernmae" type="text" placeholder="User Name" required>
+
+                <input required="required" id="region" type="text" placeholder="Region">
+                <input required="required" id="country" type="text" placeholder="Country" required>
+
+                <input required="required" id="pnonenumber" type="number" placeholder="Phone Number" required>
+
                 <input required="required" id="Email" type="text" placeholder="Email">
                 <input required="required" id="password" type="password" placeholder="Password" required>
-                <input required="required" id="confirm-password" type="password" placeholder="Confirm Password" required>
+                <input required="required" id="confirm-password" type="password" placeholder="Repeat Your Password" required>
+
 
                 <div class="btn-box">
                     <button type="button" id="next1">Next</button>
@@ -44,11 +54,12 @@
             </form>
 
             <form id="form2">
-                <h2>Social Links</h2>
-                <input type="text" placeholder="Facebook" required>
-                <input type="text" placeholder="Github" required>
-                <input type="text" placeholder="Linked In" required>
+                <h2>Work Experience</h2>
+                <h1> Your Work Experience </h1>
+                <textarea style="height: 200px;width: 80%;"></textarea>
 
+                <h1> Write description about yourself (200 words) </h1>
+                <textarea style="height: 200px;width: 80%;"></textarea>
                 <div class="btn-box">
                     <button type="button" id="back1">Back</button>
                     <button type="button" id="next2">Next</button>
@@ -57,10 +68,13 @@
             </form>
 
             <form id="form3">
-                <h2>Personal Info</h2>
-                <input type="text" placeholder="First Name" required>
-                <input type="text" placeholder="Last Name" required>
-                <input type="text" placeholder="Mobile Number" required>
+                <h2>Educational Background</h2>
+                <div id="eduback" class="eduback">
+                    <input type="text" placeholder="Degree" required>
+                    <input type="text" placeholder="University" required>
+                    <input type="date" placeholder="Gradutaion Year" required>
+                </div>
+                <button style="margin-top: 12px;height: 41px;border-radius: 2px;background-color: #111;background-image: none;" type="button" id="addedu">Add Another Education</button>
 
                 <div class="btn-box">
                     <button type="button" id="back2">Back</button>
