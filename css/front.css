@@ -231,9 +231,8 @@ body::-webkit-scrollbar-thumb {
         border: none;
     }
     .landing-section .search-bar {
-    top: 32%;
-    left: 48%;
-    width: 299px;
+        top: 32%;
+        left: 63%;
     }
 }
 
@@ -277,8 +276,8 @@ body::-webkit-scrollbar-thumb {
 @media(max-width:560px) {
     .landing-section .whats-happening {
         position: fixed;
-        top: 83%;
-        left: 73%;
+        top: 82%;
+        left: 66%;
         width: 85px;
         height: 85px;
         border-radius: 50%;
@@ -616,3 +615,148 @@ footer .copy-right {
 
 
 /* End Footer Section */
+
+
+/* Start tourguideregpage Style */
+
+.tourguideregpage {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/svgbackreg.png");
+    background-color: #111;
+    position: fixed;
+}
+
+.tourguideregpage .container {
+    width: 360px;
+    height: 400px;
+    margin: 8% auto;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow: hidden;
+}
+
+.tourguideregpage .container h3 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #777;
+}
+
+.tourguideregpage .container form {
+    width: 280px;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.tourguideregpage .container form input {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.tourguideregpage .container form input::placeholder {
+    color: #777;
+}
+
+.tourguideregpage .container .btn-box {
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.tourguideregpage .container form button {
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    background: linear-gradient(to right, #ffad06, #111);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#form2 {
+    left: 450px;
+}
+
+#form3 {
+    left: 450px;
+}
+
+.step-row {
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #000;
+    position: relative;
+    left: -15px;
+}
+
+.step-row .step-col {
+    width: 120px;
+    text-align: center;
+    color: #333;
+    position: relative;
+    font-size: 15px;
+}
+
+.step-row #progress {
+    position: absolute;
+    height: 100%;
+    width: 120px;
+    background: linear-gradient(to right, #ffad06, #111);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.step-row #progress::after {
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #111;
+    position: absolute;
+    right: -20px;
+    top: 0;
+}
+
+.backhome {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.backhome a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* End tourguideregpage Style */
