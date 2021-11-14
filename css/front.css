@@ -231,8 +231,9 @@ body::-webkit-scrollbar-thumb {
         border: none;
     }
     .landing-section .search-bar {
-        top: 32%;
-        left: 63%;
+    top: 32%;
+    left: 48%;
+    width: 299px;
     }
 }
 
