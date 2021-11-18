@@ -761,6 +761,22 @@ footer .copy-right {
     font-size: 18px;
 }
 
+.tourguideregpage .container form select {
+    width: 45%;
+    padding: 10px 5px;
+    margin: 5px 5px;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.tourguideregpage .container form select::placeholder {
+    color: rgb(87, 87, 87);
+    font-size: 18px;
+}
+
+
 .tourguideregpage .container .btn-box {
     width: 100%;
     margin: 30px auto;
@@ -807,8 +823,15 @@ footer .copy-right {
     left: 1500px;
 }
 
+#form4 {
+    left: 1500px;
+}
+
+#form5 {
+    left: 1500px;
+}
 .step-row {
-    width: 360px;
+    width: 600px;
     height: 40px;
     margin: 0 auto;
     display: flex;
@@ -919,6 +942,53 @@ footer .copy-right {
     -o-border-radius: 5px;
     padding: 15px;
 }
+
+/* Basics */
+
+  label, input {
+    color: #333;
+    font: 14px/20px Arial;
+  }
+  label {
+    display: inline-block;
+    width: 5em;
+    padding: 0 1em;
+    text-align: right;
+  }
+  
+  /* Hide the file input using
+  opacity */
+  [type=file] {
+      position: absolute;
+      filter: alpha(opacity=0);
+      opacity: 0;
+  }
+  input,
+  [type=file] + label {
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    text-align: left;
+    padding: 10px;
+    width: 150px;
+    margin: 0;
+    left: 0;
+    position: relative;
+  }
+  [type=file] + label {
+    text-align: center;
+    left: 7.35em;
+    top: 0.5em;
+    /* Decorative */
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-right: 40px;
+    min-height: 53px;
+  }
+  [type=file] + label:hover {
+    background: #3399ff;
+  }
 
 
 /* End tourguideregpage Style */
