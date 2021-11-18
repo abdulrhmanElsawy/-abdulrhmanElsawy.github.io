@@ -47,10 +47,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navbar img {
-    width: 157px;
+    width: 111px;
     position: absolute;
-    top: -19px;
+    top: 5px;
     user-select: none;
+    background-color: #fff;
+    border-radius: 10px;
 }
 
 .navbar ul {
