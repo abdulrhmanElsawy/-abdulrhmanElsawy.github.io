@@ -38,8 +38,8 @@ body::-webkit-scrollbar-thumb {
     background-color: #00000091;
     border-radius: 0;
     border: none;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 24px;
+    padding-bottom: 20px;
     position: absolute;
     margin-bottom: 0;
     z-index: 100;
@@ -49,7 +49,7 @@ body::-webkit-scrollbar-thumb {
 .navbar img {
     width: 157px;
     position: absolute;
-    top: 0;
+    top: -19px;
     user-select: none;
 }
 
@@ -776,7 +776,6 @@ footer .copy-right {
     font-size: 18px;
 }
 
-
 .tourguideregpage .container .btn-box {
     width: 100%;
     margin: 30px auto;
@@ -830,6 +829,7 @@ footer .copy-right {
 #form5 {
     left: 1500px;
 }
+
 .step-row {
     width: 600px;
     height: 40px;
@@ -943,28 +943,34 @@ footer .copy-right {
     padding: 15px;
 }
 
+
 /* Basics */
 
-  label, input {
+label,
+input {
     color: #333;
     font: 14px/20px Arial;
-  }
-  label {
+}
+
+label {
     display: inline-block;
     width: 5em;
     padding: 0 1em;
     text-align: right;
-  }
-  
-  /* Hide the file input using
+}
+
+
+/* Hide the file input using
   opacity */
-  [type=file] {
-      position: absolute;
-      filter: alpha(opacity=0);
-      opacity: 0;
-  }
-  input,
-  [type=file] + label {
+
+[type=file] {
+    position: absolute;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+input,
+[type=file]+label {
     border: 1px solid #CCC;
     border-radius: 3px;
     text-align: left;
@@ -973,8 +979,9 @@ footer .copy-right {
     margin: 0;
     left: 0;
     position: relative;
-  }
-  [type=file] + label {
+}
+
+[type=file]+label {
     text-align: center;
     left: 7.35em;
     top: 0.5em;
@@ -985,10 +992,11 @@ footer .copy-right {
     cursor: pointer;
     margin-right: 40px;
     min-height: 53px;
-  }
-  [type=file] + label:hover {
+}
+
+[type=file]+label:hover {
     background: #3399ff;
-  }
+}
 
 
 /* End tourguideregpage Style */
