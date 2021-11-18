@@ -49,10 +49,14 @@ body::-webkit-scrollbar-thumb {
 .navbar img {
     width: 111px;
     position: absolute;
-    top: 5px;
+    top: 5 px;
     user-select: none;
     background-color: #fff;
     border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .navbar ul {
