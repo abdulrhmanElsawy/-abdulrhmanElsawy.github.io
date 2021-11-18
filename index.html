@@ -29,6 +29,13 @@
 
 
     <!-- Start Navbar Section -->
+    <div class="upper-nav">
+        <div class="container">
+            <span class="special"><a href="TourGuideRegister.html"> Sign Up as Tourguide</a></span>
+            <span><a href="profile.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></span>
+
+        </div>
+    </div>
 
     <nav class="navbar navbar-inverse">
         <div class="container">
@@ -50,8 +57,7 @@
                     <li><a href="#about"> About</a></li>
                     <li><a href="#"> Meet a tour guide</a></li>
                     <li><a href="#"> Customize Your Own Trip</a></li>
-                    <li><a href="#"> Login</a></li>
-                    <li><a href="TourGuideRegister.html"> Sign Up as Tourguide</a></li>
+
 
                 </ul>
 
@@ -72,19 +78,19 @@
     <section class="landing-section">
 
         <div class="video">
-            <video width="100%" src="videos/landing-ocean-video.mp4" muted autoplay loop></video>
+            <video width="100%" src="videos/landing-ocean-video.mp4" muted loop autoplay></video>
         </div>
         <div class="overlay"></div>
         <div class="search-bar">
             <button><i class="fa fa-search" aria-hidden="true"></i></button><input placeholder="Activities / Places / TourGuides ..." type="search">
         </div>
-        <div class="text animate__animated animate__fadeInDown">
+        <div class="text animate__animated animate__fadeInDown animate__slow animate__delay-1s">
             <h2>Never Stop</h2>
             <h3>Exploring The World</h3>
 
             <a href="#">Get A TourGuide Now</a>
         </div>
-        <div class=" animate__animated animate__bounceInRight whats-happening">
+        <div class=" animate__animated animate__bounceInRight whats-happening animate__slow animate__delay-1s">
             <h2>What's Happening ?</h2>
         </div>
 
@@ -101,7 +107,7 @@
                     <h2>Lorem ipsum dolor sit amet consectetur
                     </h2>
                     <h1>What Is Egyptus ?</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, totam in distinctio a dolor nihil doloribus nulla enim, quia cumque voluptas commodi pariatur ratione assumenda? Lorem, ipsum dolor sit amet consectetur adipisicing
+                    <p id="about-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, totam in distinctio a dolor nihil doloribus nulla enim, quia cumque voluptas commodi pariatur ratione assumenda? Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit. Impedit magnam, suscipit atque consequatur nulla quia est. Itaque explicabo asperiores non quis quo eveniet reprehenderit nulla sit esse. A, quia! Excepturi? elit. Impedit magnam, suscipit atque consequatur nulla quia est.
                         Itaque explicabo asperiores non quis quo eveniet reprehenderit nulla sit esse. A, quia! Excepturi?
                     </p>
@@ -116,39 +122,49 @@
 
     <!-- Start Why Egyptus Section -->
 
-    <section class="why-egyptus">
+    <section id="why-egyptus" class="why-egyptus">
         <div class="container">
             <div class="row">
-                <div class=" animate__animated animate__fadeInTopLeft special col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <h2>WHY BOOK WITH EGYPTUS ?</h2>
+                <div class=" animate__animated animate__fadeInTopLeft special col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h2 style="text-align: center;">WHY BOOK WITH EGYPTUS ?</h2>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                            <div class="why-card">
-                                <h1>Ultimate Flexibility</h1>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non?</p>
-                            </div>
+                        <div id="first-left-para" class="left col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <h1>Ultimate Flexibility</h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non? Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Non? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non?
+                            </p>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                            <div class="why-card">
-                                <h1>Memorable Experiences</h1>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non?</p>
-                            </div>
+                        <div id="first-right-img" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <img width="100%" src="images/2.JPG" alt="">
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                            <div class="why-card">
-                                <h1>Quality at Our Core</h1>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non?</p>
-                            </div>
+                        <div id="second-left-img" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <img width="100%" src="images/2.JPG" alt="">
+
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                            <div class="why-card">
-                                <h1>Award-winning support</h1>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non?</p>
-                            </div>
+                        <div id="second-right-para" class="right col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                            <h1>Award-winning support</h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non? Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Non? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non?</p>
+
                         </div>
+                        <div id="third-left-para" class="left col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                            <h1>Quality at Our Core</h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non? Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Non? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non?/p>
+
+                        </div>
+
+                        <div id="third-right-img" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <img width="100%" src="images/sailboats.jpg" alt="">
+
+                        </div>
+
                     </div>
+
                 </div>
             </div>
         </div>
@@ -353,10 +369,10 @@
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/TextPlugin.min.js"></script>
     <script src="js/CSSPlugin.min.js"></script>
-
     <script src="js/bootstrap.min.js "></script>
     <script src="js/slider.js"></script>
     <script src="js/front.js"></script>
+
 </body>
 
 </html>
