@@ -4,8 +4,12 @@ $(document).ready(function() {
         form3 = document.getElementById("form3"),
         next1 = document.getElementById("next1"),
         next2 = document.getElementById("next2"),
+        next3 = document.getElementById("next3"),
+        next4 = document.getElementById("next4"),
         back1 = document.getElementById("back1"),
         back2 = document.getElementById("back2"),
+        back3 = document.getElementById("back3"),
+        back4 = document.getElementById("back4"),
         Email = document.getElementById("Email"),
         password = document.getElementById("password"),
         confirmPassword = document.getElementById("confirm-password"),
@@ -36,6 +40,31 @@ $(document).ready(function() {
         form3.style.left = "1500px";
         progress.style.width = "240px";
     }
+
+    next3.onclick = function() {
+        form3.style.left = "-1500px";
+        form4.style.left = "40px";
+        progress.style.width = "480px";
+    }
+
+    back3.onclick = function() {
+        form3.style.left = "40px";
+        form4.style.left = "1500px";
+        progress.style.width = "360px";
+    }
+
+    next4.onclick = function() {
+        form4.style.left = "-1500px";
+        form5.style.left = "40px";
+        progress.style.width = "600px";
+    }
+
+    back4.onclick = function() {
+        form4.style.left = "40px";
+        form5.style.left = "1500px";
+        progress.style.width = "480px";
+    }
+
 
 
 
@@ -102,6 +131,16 @@ $(document).ready(function() {
 
 
 
+    $("[type=file]").on("change", function(){
+        // Name of file and placeholder
+        var file = this.files[0].name;
+        var dflt = $(this).attr("placeholder");
+        if($(this).val()!=""){
+          $(this).next().text(file);
+        } else {
+          $(this).next().text(dflt);
+        }
+      });
 
 
 });
