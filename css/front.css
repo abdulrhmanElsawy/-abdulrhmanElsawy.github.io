@@ -104,14 +104,6 @@ body::-webkit-scrollbar-thumb {
         width: 34px;
         margin-top: 6px;
     }
-    .navbar img {
-        width: 157px;
-        position: absolute;
-        top: 0%;
-        filter: invert(1);
-        border-right: 0px solid #000;
-        -webkit-filter: invert(1);
-    }
 }
 
 .upper-nav {
