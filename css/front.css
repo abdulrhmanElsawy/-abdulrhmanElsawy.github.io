@@ -35,7 +35,7 @@ body::-webkit-scrollbar-thumb {
 /* Start Navbar Section */
 
 .navbar {
-    background-color: #00000091;
+    background-color: #ffffff10;
     border-radius: 0;
     border: none;
     padding-top: 24px;
@@ -44,6 +44,12 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 0;
     z-index: 100;
     width: 100%;
+    backdrop-filter: blur(10px);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 
 .navbar img {
@@ -211,7 +217,7 @@ body::-webkit-scrollbar-thumb {
 .text a {
     display: inline-block;
     font-size: 1em;
-    background-color: #d59425;
+    background-color: #111;
     padding: 10px 30px;
     text-decoration: none;
     color: #fff;
@@ -242,9 +248,29 @@ body::-webkit-scrollbar-thumb {
     width: 80%;
     border: none;
     outline: none;
-    box-shadow: 0px 0px 25px -2px rgba(0, 0, 0, 0.29);
+    box-shadow: 0px 0px 25px -2px rgb(0 0 0 / 29%);
     color: #111;
     padding: 20px;
+    background-color: #ffffff10;
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    backdrop-filter: blur(12px);
+}
+
+.landing-section input:hover {
+    background-color: #fff;
+}
+
+.landing-section input::placeholder {
+    color: #111;
 }
 
 @media(max-width:500px) {
@@ -262,8 +288,8 @@ body::-webkit-scrollbar-thumb {
     height: 46px;
     border: none;
     width: 51px;
-    box-shadow: 0px 0px 25px -2px rgba(0, 0, 0, 0.29);
-    background-color: #d59425;
+    box-shadow: 0px 0px 25px -2px rgb(0 0 0 / 29%);
+    background-color: #111;
 }
 
 .landing-section .whats-happening {
@@ -755,7 +781,7 @@ footer .copy-right {
 .tourguideregpage .container form input {
     width: 45%;
     padding: 10px 5px;
-    margin: 5px 5px;
+    margin: 4px 7px;
     border: 0;
     border-bottom: 1px solid #999;
     outline: none;
@@ -958,19 +984,11 @@ input {
     font: 14px/20px Arial;
 }
 
-label {
-    display: inline-block;
-    width: 5em;
-    padding: 0 1em;
-    text-align: right;
-}
-
 
 /* Hide the file input using
   opacity */
 
 [type=file] {
-    position: absolute;
     filter: alpha(opacity=0);
     opacity: 0;
 }
@@ -984,25 +1002,320 @@ input,
     width: 150px;
     margin: 0;
     left: 0;
-    position: relative;
 }
 
 [type=file]+label {
-    text-align: center;
-    left: 7.35em;
-    top: 0.5em;
     /* Decorative */
     background: #333;
     color: #fff;
     border: none;
     cursor: pointer;
     margin-right: 40px;
-    min-height: 53px;
+    min-height: 61px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 [type=file]+label:hover {
     background: #3399ff;
 }
 
+#form5 .row {
+    text-align: center;
+}
+
 
 /* End tourguideregpage Style */
+
+
+/* Start Customize Your Own Trip Page */
+
+.customOwnTrip {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/custombackground.png");
+    background-position: center;
+    background-size: cover;
+    background-color: #111;
+    position: fixed;
+}
+
+.customOwnTrip .container {
+    width: 80%;
+    height: 561px;
+    margin: 2% auto;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.customOwnTrip .container::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.customOwnTrip .container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.customOwnTrip .container::-webkit-scrollbar-thumb {
+    background-color: #111;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.customOwnTrip .container h3 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #777;
+}
+
+.customOwnTrip .container form {
+    width: 900px;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.customOwnTrip .container form input {
+    width: 45%;
+    padding: 10px 5px;
+    margin: 5px 5px;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.customOwnTrip .container form input::placeholder {
+    color: rgb(87, 87, 87);
+    font-size: 18px;
+}
+
+.customOwnTrip .container form select {
+    width: 45%;
+    padding: 10px 5px;
+    margin: 5px 5px;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.customOwnTrip .container form select::placeholder {
+    color: rgb(87, 87, 87);
+    font-size: 18px;
+}
+
+.customOwnTrip .container .btn-box {
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.customOwnTrip .container form button {
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    background: #ffad06;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media(max-width:850px) {
+    .customOwnTrip {
+        width: 100%;
+        height: 139%;
+        background-color: #111;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: 0;
+    }
+    .customOwnTrip .container {
+        width: 420px;
+        height: calc(100% - 100px);
+        margin: 2% auto;
+        background: #ffffff;
+        border-radius: 5px;
+        position: relative;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .customOwnTrip .container form input {
+        width: 100%;
+        padding: 10px 5px;
+        margin: 5px 0;
+        border: 0;
+        border-bottom: 1px solid #999;
+        outline: none;
+        background: transparent;
+        margin-left: 0;
+    }
+    .customOwnTrip .container form {
+        width: 335px;
+        position: absolute;
+        top: 100px;
+        left: 40px;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+    }
+}
+
+.checkbox-inline,
+.radio-inline {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.flight {
+    border: 1px solid #111;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 15px;
+    margin-top: 60px;
+    display: none;
+}
+
+.adress {
+    border: 1px solid #111;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 15px;
+    margin-top: 60px;
+    display: none;
+}
+
+.customOwnTrip .container #form3 {
+    width: 92%;
+    position: absolute;
+    top: 100px;
+    left: 1500px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    text-align: center;
+    -o-transition: 0.5s;
+}
+
+.bookingassistwarning {
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 15px;
+    margin-top: 60px;
+    display: none;
+}
+
+.bookingassist {
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 15px;
+    margin-top: 60px;
+    display: none;
+}
+
+.bookinginfo {
+    border: 1px solid #111;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 15px;
+    margin-top: 60px;
+    display: none;
+}
+
+.customOwnTrip .container #form4 {
+    width: 92%;
+    position: absolute;
+    top: 100px;
+    left: 1500px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    text-align: center;
+    -o-transition: 0.5s;
+}
+
+.customOwnTrip .container #form4 textarea.area-one {
+    width: 70%;
+    height: 150px;
+}
+
+.customOwnTrip .container #form4 textarea.area-two {
+    width: 70%;
+    height: 75px;
+}
+
+.thank-you {
+    text-align: center;
+}
+
+.thank-you i {
+    text-align: center;
+    font-size: 65px;
+}
+
+#next1,
+#next2,
+#next3,
+.tourguideregpage .submit-all-forms {
+    pointer-events: none;
+}
+
+
+/* End Customize Your Own Trip Page Style */
