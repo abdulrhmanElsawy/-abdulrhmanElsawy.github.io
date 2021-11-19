@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/titlelogo.png" type="image/icon type">
+    <title>Egyptus</title>
+
+    <!-- Css Files -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/front.css">
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;700;900&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+
+    <div class="customOwnTrip">
+        <h1 class="backhome"> <a href="index.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Go Back Home</a></h1>>
+
+
+        <div class="container">
+
+            <form method="get" id="form1">
+                <h1 style="text-align: center;margin-bottom: 10px;">Customize Your Own Trip</h1>
+                <h2>Personal Information</h2>
+                <input required="required" id="Fname" type="text" placeholder="First Name">
+                <input required="required" id="Lname" type="text" placeholder="Last Name" required="required">
+                <input required="required" id="birthdate" type="text" placeholder="Birthdate" required="required">
+
+                <input required="required" id="country" type="text" placeholder="Country">
+                <input required="required" id="city" type="text" placeholder="City" required="required">
+
+                <input required="required" id="email" type="email" placeholder="Email" required="required">
+
+                <input required="required" id="phonenumber" type="phonr" placeholder="Phone Number" required="required">
+
+
+
+
+                <div class="btn-box">
+                    <button type="button" id="next1">Next</button>
+                </div>
+            </form>
+
+            <form method="get" id="form2">
+
+                <h1 style="font-size: 29px;margin-bottom: 30px;"> Do You need an airport pick up?</h1>
+                <label class="radio-inline">Yes<input id="yesradio" type="radio" name="optradio"></label>
+                <label class="radio-inline">No<input id="noradio"  type="radio" name="optradio"></label>
+
+                <div style="text-align: center;" id="flight" class="flight">
+                    <input id="dateflight" type="text" placeholder="Date Of Arrival">
+                    <input id="timeflight" type="text" placeholder="Time Of Arival">
+                    <input id="flightnumber" type="text" placeholder="Flight Number">
+                </div>
+
+
+
+
+
+
+                <div class="btn-box">
+                    <button type="button" id="back1">Back</button>
+                    <button type="button" id="next2">Next</button>
+
+                </div>
+            </form>
+
+            <form method="get" id="form3">
+                <h1 style="font-size: 29px;margin-bottom: 30px;"> Do You Have a Hotel?</h1>
+                <label class="radio-inline">Yes<input id="yesradioadress" type="radio" name="optradio"></label>
+                <label class="radio-inline">No<input id="noradioadress" type="radio" name="optradio"></label>
+
+                <div style="text-align: center;" id="adress" class="adress">
+                    <input id="adressstay" type="text" placeholder="Adress of your stay">
+                </div>
+
+                <div style="text-align: center;" id="bookingassist" class="bookingassist">
+                    <h1 style="font-size: 29px;margin-bottom: 30px;margin-top: 30px;"> Do You Need Any Assistance With Booking Your Star</h1>
+                    <label class="radio-inline">Yes<input id="yesradioassist" type="radio" name="optradio"></label>
+                    <label class="radio-inline">No<input id="noradioassist" type="radio" name="optradio"></label>
+
+                    <div style="text-align: center;" id="bookingassistwarning" class="bookingassistwarning alert alert-danger">
+                        <h1>Kindely Be Noted that our guide will need to know about your distination after picking you up</h1>>
+                    </div>
+
+                    <div style="text-align: center;" id="bookinginfo" class="bookinginfo">
+                        <input id="personsNumber" type="number" placeholder="How Many Persons">
+                        <input id="roomsNumber" type="number" placeholder="How Many Rooms">
+                        <input id="preferedTown" type="text" placeholder="Pereferred area of stay? Downtown - New Cairo ...">
+                        <select name="type-of-stay" id="stay">
+                            <option value="">Type Of Stay</option>
+                            <option value="Hotel">Hotel</option>
+                            <option value="Hostel">Hostel</option>
+                            <option value="Camp">Camp</option>
+                            <option value="Apartment">Apartment</option>
+                        </select>
+                        <input id="budget" type="number" placeholder="Budget in $">
+                    </div>
+                </div>
+
+                <div class="btn-box">
+                    <button type="button" id="back2">Back</button>
+                    <button type="button" id="next3">Next</button>
+
+                </div>
+            </form>
+
+            <form method="get" action="index.html" id="form4">
+                <h2>Please Write Us Your Desirable Program</h2>
+                <textarea class="area-one"></textarea>
+
+                <h2>Any Other Comments? </h2>
+                <textarea class="area-two"></textarea>
+
+
+                <div class="btn-box">
+                    <button type="button" id="back3">Back</button>
+                    <button type="button" id="next4">Submit</button>
+
+                </div>
+            </form>
+
+
+            <form method="get" action="index.html" id="form5">
+
+                <div class="thank-you alert alert-success" role="alert">
+                    <h3>Thank you for submitting your request for finding you a suitable stay, One of our Tour operators will contact you shortly with options for your stay</h3>
+                    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                </div>
+
+                <div class="btn-box">
+                    <button type="button" id="back4">Back</button>
+                    <button id="submit-all-forms" type="submit">Send</button>
+
+                </div>
+            </form>
+
+            <div class="step-row">
+                <div id="progress">
+
+                </div>
+                <div class="step-col"><small> Step 1</small></div>
+                <div class="step-col"><small> Step 2</small></div>
+                <div class="step-col"><small> Step 3</small></div>
+                <div class="step-col"><small> Step 4</small></div>
+                <div class="step-col"><small> Step 5</small></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Scripts -->
+    <script src=" js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/customowntrip.js"></script>
+
+</body>
+
+</html>
