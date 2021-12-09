@@ -65,6 +65,13 @@ body::-webkit-scrollbar-thumb {
     -o-border-radius: 10px;
 }
 
+@media(max-width:550px) {
+    .navbar img {
+        width: 91px;
+        top: 5px;
+    }
+}
+
 .navbar ul {
     margin-left: 20%;
 }
@@ -1443,21 +1450,6 @@ input,
     cursor: pointer;
 }
 
-.profile-description-hovering {
-    background-color: #0000003a;
-    width: 92%;
-    height: 40%;
-    position: absolute;
-    top: 43%;
-    text-align: right;
-    display: none;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-}
-
 .profile-description:hover+.profile-description-hovering {
     display: block;
 }
@@ -1567,6 +1559,12 @@ input,
         -ms-transition: var(--main-tranistion);
         -o-transition: var(--main-tranistion);
         z-index: 1;
+    }
+}
+
+@media(max-width:550px) {
+    .profile-settings-dropdown ul {
+        right: 70px;
     }
 }
 
