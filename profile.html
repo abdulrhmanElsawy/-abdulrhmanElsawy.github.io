@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/titlelogo.png" type="image/icon type">
-    <title>Egyptus</title>
+    <link rel="icon" href="images/Logo_cropped.png" type="image/icon type">
+    <title>EgyptusTravel</title>
 
     <!-- Css Files -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -42,12 +42,14 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-nav" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  
+              </button>
                 <a class="navbar-brand" href="index.html"> <img src="images/logo.png" alt="Egyptus Logo"> </a>
+
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -57,12 +59,29 @@
                     <li><a href="#about"> About</a></li>
                     <li><a href="profile.html"> Meet a tour guide</a></li>
                     <li><a href="customizeyourowntrip.html"> Customize Your Own Trip</a></li>
+                    <li><a style="color: transparent;"> Customize Your Own Trip</a></li>
+                    <div class="profile-settings">
+                        <img src="images/CairoTower.jpg" style="border-radius: 50%; width: 50px; height:50px;">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+
+                    </div>
+                    <div class="profile-settings-dropdown">
+                        <ul>
+                            <li><a href="#services">visit website</a></li>
+                            <li><a href="#portfolio">settings <i class="fa fa-cog" aria-hidden="true"></i></a></li>
+                            <li><a href="#About">info <i class="fa fa-question-circle" aria-hidden="true"></i></a></li>
+                            <li><a href="#Contact">Log Out <i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+
+                        </ul>
+                    </div>
 
                 </ul>
 
             </div>
+
             <!-- /.navbar-collapse -->
         </div>
+
         <!-- /.container-fluid -->
     </nav>
 
@@ -72,36 +91,53 @@
 
     <!-- End Navbar Section -->
 
+
     <!-- Start Main Section -->
 
     <section class="profile">
         <div class="container">
             <div class="info">
-                <h1 class="Tourguide-name">John R</h1>
-                <button>Free Consult With John</button>
+                <h1 class="Tourguide-name">Soliman Kamel</h1>
+                <button data-toggle="modal" data-target="#book">Travel With Soliman</button>
+                <button id="edit_trips"> Edit Trips </button>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-xs-12 col-sm-12">
-                    <img width="100%" src="images/profileimages/user.jpg" alt="user-image">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam ipsa magnam quia, tempore facilis ea, iusto, ratione vel ipsum repellat incidunt culpa iure quam quas. Ipsum quas magnam tenetur illum optio doloribus doloremque porro
-                        nihil temporibus aperiam, nisi exercitationem maiores nesciunt unde sed tempora sapiente corrupti distinctio culpa eius asperiores!
+                    <img class="user-image" width="100%" src="images/profileimages/pp.jpeg" alt="user-image">
+                    <div class="profile-photo-hovering">
+                        <i id="edit-profile-photo" class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    </div>
+                    <p class="profile-description">An Egyptian native, Food and travel have always been my passion, my parents made it a priority for me to be educated and inspired by the trips and travel experiences we have in Egypt. With extensive personal travel experience, and
+                        the combined power of a wonderful host agency and the Virtuoso network, I have relationships with hundreds of travel suppliers and attention to detail and individualized customer service Is my trademarks. I craft wonderful personal
+                        itineraries for you to discover Egypt's incredible wonders, make memories that last a lifetime, and return home enlightened. After just over 5 years since founding J5Travel, I have been named to the global list of Condé Nast Traveler's
+                        Top Travel Specialists for 2021
+
                     </p>
+                    <div class="profile-description-hovering">
+                        <i id="edit-profile-description" class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    </div>
                     <hr>
                     <h3>Expertise</h3>
                     <div class="Expertise">
                         <span>Local Cuisine</span><span>Local Culture</span>
                         <span>Safari</span><span>Biking</span>
                     </div>
+                    <hr>
+                    <h3>Languages</h3>
+                    <div class="Expertise">
+                        <span>English</span><span>Arabic</span>
+                        <span>French</span><span>Chinise</span>
+                    </div>
 
                 </div>
                 <div class="col-lg-8 col-md-6 col-xs-12 col-sm-12">
                     <div class="slider-container">
                         <div id="slide-number" class="slide-number"></div>
-                        <img src="images/profileimages/Hurghada.jpg" alt="" />
-                        <img src="images/profileimages/Sharm.jpg" alt="" />
-                        <img src="images/profileimages/Pyrimades.jpg" alt="" />
-                        <img src="images/profileimages/SaltyLakes.jpg" alt="" />
-                        <img src="images/profileimages/ParoonCastle.jpg" alt="" />
+                        <img src="images/profileimages/hurghada_trip.jpeg" alt="" />
+                        <!--<img src="images/profileimages/Sharm.jpg" alt="" />-->
+                        <img src="images/profileimages/pyramids_trip.jpeg" alt="" />
+                        <!--<img src="images/profileimages/SaltyLakes.jpg" alt="" />-->
+                        <img src="images/profileimages/alex.jpeg" alt="" />
 
 
 
@@ -116,23 +152,25 @@
                     </div>
                     <div class="slider-container2">
                         <div style="display:none;" id="slide-number2" class="slide-number2"></div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tempora asperiores ex dolorem dolorum eveniet corrupti dolor facere! Ab, nam. Lorem
-                            ipsum dolor sit amet consectetur, adipisicing elit. Numquam, molestias!
+                        <p>I will pick you up in the morning from your hotel, and transfer you to board on your boat where you will spend about 90 minutes sunbathing and relaxing, until we reach a wonderful place called Dolphin House which is famous as a
+                            home area for a large number of dolphins. See these fascinating and extremely intelligent animals playing in the water while you make the snorkeling. You will come here to see dolphins in their natural habitat. It means that
+                            they live free, not in a pool controlled and maybe trained by the humans so you can observe their normal and voluntary behavior. If they choose to come to you and play with you, it happens according to their own will. You will
+                            discover the pure nature at its best, and make a precious and unique experience.
+                            <br>
+                            <a data-toggle="modal" data-target="#hurgada">Click to view this trip activities</a>
                         </p>
-                        <p>Lorem ipsum dolor, sit elit. Perspiciatis, dolorem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, quibusdam, tenetur magnam nam quaerat expedita hic nemo mollitia quod nostrum eius blanditiis quam veniam. Fugit
-                            quasi nobis earum? Veniam a iusto ullam eligendi quos voluptate est quo quibusdam. Libero unde repudiandae dicta cumque porro magnam ratione harum laudantium cum numquam! Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Deserunt, ipsam!
+                        <p>One of the most mysterious Seven Wonders of the Ancient World (and the only one still standing), the Pyramids of Giza—the Great Pyramid of Khufu, Pyramid of Khafre, and Pyramid of Menkaure—still live up to more than 4,000 years
+                            of hype. Seeing these 4th-dynasty pyramids and their guardian Great Sphinx rising from the Giza Plateau is a must on any trip to Cairo (and the reason many travelers find themselves in Egypt).
                         </p>
-                        <p>Lorem ipsum dolor, sit amet consecteturconsecteturconsectetur adipisicing elit. Perspiciatis, dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit velit, temporibus totam laudantium ipsam!
-                            Nemo suscipit facere libero cum nobis blanditiis illum in fugiat sunt aperiam? Nulla, odit saepe illo at eius commodi nemo molestias voluptate, sed magnam fuga! Lorem, ipsum.
-                        </p>
-                        <p>Lorem ipsum dolor, sit amet adipisicing elit. Perspiciatis, dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, officia. Deleniti minima possimus officiis facilis quo. Lorem ipsum dolor, sit amet consectetur
+                        <!--<p>Lorem ipsum dolor, sit amet consecteturconsecteturconsectetur adipisicing elit. Perspiciatis, dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit velit, temporibus totam laudantium ipsam!
+                            Nemo suscipit facere libero cum nobis blanditiis illum in fugiat sunt aperiam? Nulla, odit saepe illo at eius commodi nemo molestias voluptate, sed magnam fuga! Lorem, ipsum. Sobhy
+                        </p>-->
+                        <!--<p>Lorem ipsum dolor, sit amet adipisicing elit. Perspiciatis, dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, officia. Deleniti minima possimus officiis facilis quo. Lorem ipsum dolor, sit amet consectetur
                             adipisicing elit. Officiis unde soluta quod voluptate vel sed nesciunt culpa illo pariatur veritatis ad assumenda odio, nobis eius aspernatur? Ea, eum!
 
-                        </p>
-                        <p>Lorem ipsum dolor, sit amet consectetur . Perspiciatis, dolorem? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure suscipit adipisci ducimus. Nemo impedit, eius quasi est similique accusamus labore dignissimos amet
-                            fuga nobis facilis ea reiciendis cum nisi molestiae porro! Consequuntur culpa ipsum repellendus. Blanditiis aliquam quasi, voluptate omnis similique voluptates placeat adipisci doloribus impedit dolore et quae dolorum dolorem
-                            culpa, tenetur temporibus voluptatem quia ad explicabo. Accusamus, molestias? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, porro.
+                        </p>-->
+                        <p>Take a private tour of the gardens, landmarks, and mosques of Alexandria with a guide who is an expert on all things Egypt and archaeology. As you explore with just your personal group, you’ll hear fun curiosities about the city,
+                            and have the freedom to ask questions in a way that’s not possible with a large, standard tour group. Entrance fees are included to all sites mentioned in the itinerary.
                         </p>
 
                     </div>
@@ -144,6 +182,72 @@
 
 
     <!-- End Main Section -->
+
+    <div class="pop-ups">
+        <div class="edit_trips_popup">
+            <h2 id="close_edittrips_button"><i class="fa fa-times" aria-hidden="true"></i>
+            </h2>
+            <h1>Edit Your Trips</h1>
+
+            <div class="dropdown">
+                <button class="edit-trip"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                  Dropdown button <i class="fa fa-caret-down" aria-hidden="true"></i>
+              </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <img src="images/Diving.jpg">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <span>Price 50 $</span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque voluptate fugiat vel quisquam ducimus quasi culpa fugit, ipsa hic, doloribus ad, repudiandae repellat aliquam praesentium eveniet totam earum commodi autem.
+                                    Eaque cumque dolore nesciunt fugiat aspernatur. Animi omnis, ut nostrum beatae quidem saepe quos, sequi sunt facilis aliquid voluptates aspernatur.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h1>ACTIVITIES</h1><br>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                                <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="pop-ups-2">
+        <div class="edit-profile-photo">
+            <h2><i class="close-edit-photo-popup fa fa-times" aria-hidden="true"></i></h2>
+            <img class="editable-photo" src="images/CairoTower.jpg">
+            <button id="for-edit-photo-input">Edit Photo</button>
+            <form class="edit-profile-photo-input" method="GET">
+                <input id="edit-profile-photo-input" type="file" name="profile-photo" place-holder="profile photo">
+            </form>
+        </div>
+
+    </div>
+
 
 
     <!-- Start Favorite Trips Section  -->
@@ -205,6 +309,259 @@
 
     <!-- End Reviews Section -->
 
+    <!-- Start of Activites Modal -->
+    <div class="modal fade" id="hurgada" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLongTitle">Hurghada Activites Menu</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">Title</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Price (USD)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+
+                                <td scope="row">Diving</td>
+                                <td>bla bla bla blaaaah</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+
+                                <td scope="row">Snorkling</td>
+                                <td>Another bla bla bla blaaahh</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Beach</td>
+                                <td>bla bla bla blaaaah</td>
+                                <td>25</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Activities Modal-->
+
+    <!-- Start of Booking Modal-->
+    <div class="modal fade" id="book" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLongTitle">Travel With John</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3>Please Select the activites you wish to do</h3>
+                    <div class="panel-group" id="my_accordian">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h4 class="panel-title" data-target="#panel-hurgada" data-toggle="collapse" data-parent="#my_accordian">Hurgada</h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="panel-hurgada">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+
+                                            <th scope="col">Title</th>
+                                            <th scope="col">Price (USD)</th>
+                                            <th scope="col">Select</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+
+                                            <td scope="row">Snorkling</td>
+
+                                            <td>30</td>
+                                            <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td scope="row">Dolphin House Ticket</td>
+                                            <td>20</td>
+                                            <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Hotel Pickup</td>
+                                            <td>20</td>
+                                            <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Diving</td>
+                                            <td>0</td>
+                                            <td><input type="checkbox"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h4 class="panel-title" data-target="#panel-sharm" data-toggle="collapse" data-parent="#my_accordian">Pyramids</h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="panel-sharm">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+
+                                            <th scope="col">Title</th>
+                                            <th scope="col">Price (USD)</th>
+                                            <th scope="col">Select</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+
+                                            <td scope="row">Hotel Pickup</td>
+                                            <td>20</td>
+                                            <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td scope="row">Horse Riding</td>
+                                            <td>20</td>
+                                            <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Pyramids Cool Pictures</td>
+                                            <td>10</td>
+                                            <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Guiding Fees</td>
+                                            <td>20</td>
+                                            <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Cup of Tea</td>
+                                            <td>2</td>
+                                            <td><input type="checkbox"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h4 class="panel-title" data-target="#panel-pyramids" data-toggle="collapse" data-parent="#my_accordian">Alexandria</h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="panel-pyramids">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+
+                                            <th scope="col">Title</th>
+                                            <th scope="col">Price (USD)</th>
+                                            <th scope="col">Select</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+
+                                            <td scope="row">Full Ticket</td>
+                                            <td>30</td>
+                                            <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td scope="row">Guiding Fees</td>
+                                            <td>40</td>
+                                            <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Hotel Pickup</td>
+                                            <td>20</td>
+                                            <td><input type="checkbox"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <form>
+                        <div class="form-group form-inline">
+                            <label for="exampleFormControlInput1">How many persons?</label>
+                            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="2">
+                        </div>
+
+                        <div class="form-group form-inline">
+                            <label for="exampleFormControlInput1">Do you need a hotel pickup?</label>
+                            <input type="radio" class="form-control" name="hotel-pickup"> Yes
+                            <input type="radio" class="form-control" name="hotel-pickup"> No
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Please let us know if need any special request</label>
+                            <br>
+                            <textarea name="special-request" id="" cols="70" rows="5"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Please pickup the desired date</label>
+                            <input type="date">
+                        </div>
+
+                    </form>
+
+                    <div>
+                        <div class="text-right">
+                            <h4>Total: <strong>USD###</strong></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#success-book" data-dismiss="modal">Send Request</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal" id="success-book" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Success</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-success" role="alert">
+                        Thank you for Booking this trip. We will Get back to you once your booking it is confirmed!
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Booking Modal-->
+
+
 
 
 
@@ -213,15 +570,25 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <h1>Egyptus</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ullam itaque culpa ipsa nihil quis deserunt, ex quia fugit vel aliquid illum delectus vero dolorem.</p>
+                    <h1>EgyptusTravel</h1>
+                    <p>EgyptusTravel seeks to elevate the tourism experience in Egypt for both the tourists and those working in the industry,we provide a platform to bridge the gap between tourists who are seeking an authentic, hassle-free vacation and
+                        the hospitality providers who can deliver a memorable Egyptian experience.</p>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <h1>Contact Us</h1>
-                    <h2>Facebook : </h2>
-                    <h2>Mobile Number : </h2>
-                    <h2>Email : </h2>
-                    <h2>Linked in : </h2>
+                    <div class="form-group">
+                        <!-- Facebook-->
+                        <button class="btn" style="background-color: #d59425; color: #fff;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg><a href="https://www.facebook.com/Egyptustravel" target="_blank" style="text-decoration: none; color: #fff;">&nbsp; Facebook</a></button>
+
+                        <!-- Instagram-->
+                        <button class="btn" style="background-color: #d59425; color: #fff;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                        </svg><a href="https://www.instagram.com/egyptustravel/" target="_blank" style="text-decoration: none; color: #fff;">&nbsp; Instagram</a></button>
+                    </div>
+                    <h2>Email: <a href="mailto:info@egyptustravel.com">info@egyptustravel.com</a></h3>
+
                 </div>
             </div>
             <div class="copy-right">
@@ -229,9 +596,6 @@
             </div>
         </div>
     </footer>
-
-
-    <!-- End Footer Section -->
 
 
 
@@ -248,6 +612,8 @@
     <script src=" js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js "></script>
     <script src="js/profileslider.js"></script>
+    <script src="js/profileJS.js"></script>
+
 </body>
 
 </html>

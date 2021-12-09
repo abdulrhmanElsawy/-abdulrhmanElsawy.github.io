@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/titlelogo.png" type="image/icon type">
-    <title>Egyptus</title>
+    <link rel="icon" href="images/Logo_cropped.png" type="image/icon type">
+    <title>EgyptusTravel</title>
 
     <!-- Css Files -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -33,6 +33,7 @@
 
         <div class="container">
             <form method="POST" id="form1">
+                <h1>Sign Up as a Tour Guide</h1>
                 <h2>Personal Information</h2>
                 <input required="required" id="Fname" type="text" placeholder="First Name">
                 <input required="required" id="Lname" type="text" placeholder="Last Name" required>
@@ -56,14 +57,14 @@
             <form id="form2">
                 <h2> Work Experience</h2>
                 <h1> Your Recent Work Experience </h1>
-                <textarea></textarea>
+                <input id="rec-work-experience" placeholder="Recent work experience">
 
                 <h1> Job Title </h1>
                 <input id="jobtitle" placeholder="Your Job Title"><br>
                 <h1> Years Of Experience as a Tour Guide </h1>
-                <label class="radio-inline"><input type="radio" name="optradio">0 to 2</label>
-                <label class="radio-inline"><input type="radio" name="optradio">2 to 5</label>
-                <label class="radio-inline"><input type="radio" name="optradio">5+</label>
+                <label class="radio-inline"><input type="radio" name="optradio">&nbsp;&nbsp;&nbsp;0 to 2</label>
+                <label class="radio-inline"><input type="radio" name="optradio">&nbsp;&nbsp;&nbsp;2 to 5</label>
+                <label class="radio-inline"><input type="radio" name="optradio">&nbsp;&nbsp;5+</label>
 
                 <div class="btn-box">
                     <button type="button" id="back1">Back</button>
@@ -141,14 +142,25 @@
                 <div style="margin-bottom:50px;">
 
                     <div class="row">
+                        <!--National ID-->
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                             <input style="display: none;" id="f02" type="file" placeholder="Add profile picture" />
-                            <label for="f02">Add  National Id picture</label>
+                            <label for="f02">Add  National ID Photo (Front)</label>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                            <input style="display: none;" id="f02" type="file" placeholder="Add profile picture" />
+                            <label for="f02">Add  National ID Photo (Back)</label>
+                        </div>
+                        <!--Tou Guide Licenses-->
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                            <input style="display: none;" id="f03" type="file" placeholder="Add profile picture" />
+                            <label for="f03">Add Tour Guide Licenses Photo (Front)</label>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                             <input style="display: none;" id="f03" type="file" placeholder="Add profile picture" />
-                            <label for="f03">Add Tour Guide Licenses picture</label>
+                            <label for="f03">Add Tour Guide Licenses Photo (Back)</label>
                         </div>
+                        <!--Personal Photo-->
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                             <input style="display: none;" id="f04" type="file" placeholder="Add profile picture" />
                             <label style="top: -15px;" for="f04">Add Personal Photo</label>
