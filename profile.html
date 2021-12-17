@@ -57,7 +57,7 @@
                 <ul class="main-ul nav navbar-nav navbar-left">
                     <li><a href="index.html"> Home</a></li>
                     <li><a href="#about"> About</a></li>
-                    <li><a href="profile.html"> Meet a tour guide</a></li>
+                    <li><a href="tourguidesProfiles.html"> Meet a tour guide</a></li>
                     <li><a href="customizeyourowntrip.html"> Customize Your Own Trip</a></li>
                     <li><a style="color: transparent;"> Customize Your Own Trip</a></li>
                     <div class="profile-settings">
@@ -426,37 +426,32 @@
             <h2 style="text-align: right;" id="close_addtrip_button"><i style="cursor: pointer;" class="fa fa-times" aria-hidden="true"></i>
             </h2>
             <h1 style="text-align: center;">Add Trip</h1>
-            <form>
-                <input type="text" placeholder="Trip Title" value="hurgada">
-                <input type="file" placeholder="Trip Photo">
-                <input type="text" placeholder="Trip Description">
-                <select name="language" class="custom-select" multiple>
-                    <option value="Local Cuisine"  >Local Cuisine</option>
-                    <option value="Local Culture" >Local Culture</option>
-                    <option value="Safary" >Safary</option>
-                    <option value="Pick up and Driving Tours">Pick up and Driving Tours</option>
-                    <option value="Art and Museums">Art and Museums</option>
-                    <option value="Nightlife and Bars">Nightlife and Bars</option>
-                    <option value="Exploration and Sightseeing">Exploration and Sightseeing</option>
-                    <option value="Islamic Cairo">Islamic Cairo</option>
-                    <option value="Pharaonic Cairo">Pharaonic Cairo</option>
-                    <option value="Roman Dynasty">Roman Dynasty</option>
-                    <option value="Modern History">Modern History</option>
-                    <option value="Christian History">Christian History</option>
-                    <option value="Christian History" >Biking</option>
-                </select>
+            <form id="addd-trip">
+                <input type="text" required placeholder="Trip Title">
+                <input type="file" required placeholder="Trip Photo">
+                <input type="text" required placeholder="Trip Description">
+                <h2 style="text-align: left;margin-left:10%;">Activities</h2>
 
-                <button style="right: 30px;
+                <div class="add-activities">
+                    <input type="text" required placeholder="Activity Title" name="act-title-1">
+                    <input type="number" required placeholder="Activity Price" name="act-price-1">
+                </div>
+
+
+
+                <button id="save-add-trips" style="right: 30px;
                 position: absolute;
-                bottom: 30px;
+                bottom: -10px;
                 width: 100px;
                 height: 40px;
                 background-color: #111;
                 color: #fff;
                 outline: none;
                 border: none;
-                border-radius: 2px;" type="submit">Save</button>
+                border-radius: 2px;
+                " type="submit">Save</button>
             </form>
+            <button id="add-activity">+ Activity</button>
 
         </div>
     </div>
