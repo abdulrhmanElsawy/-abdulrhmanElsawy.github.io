@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cauch</title>
+
+    <!-- Styles -->
+
+    <link rel="styleSheet" href="css/normalize.css">
+    <link rel="styleSheet" href="css/all.min.css">
+    <link rel="styleSheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css" />
+
+    <link rel="icon" src="images/logo.png">
+    <link rel="styleSheet" href="css/front.css">
+
+
+
+    <!-- FontAwesome Cdn -->
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="fonts/HelveticaNeueLT Arabic 55 Roman.css" />
+
+
+    <style>
+        .spinner {
+            width: 56px;
+            height: 56px;
+            display: grid;
+            animation: spinner-plncf9 4s infinite;
+        }
+        
+        .spinner::before,
+        .spinner::after {
+            content: "";
+            grid-area: 1/1;
+            border: 9px solid;
+            border-radius: 50%;
+            border-color: #474bff #474bff #0000 #0000;
+            mix-blend-mode: darken;
+            animation: spinner-plncf9 1s infinite linear;
+        }
+        
+        .spinner::after {
+            border-color: #0000 #0000 #dbdcef #dbdcef;
+            animation-direction: reverse;
+        }
+        
+        @keyframes spinner-plncf9 {
+            100% {
+                transform: rotate(1turn);
+            }
+        }
+        
+        .loading {
+            position: fixed;
+            background-color: #fff;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 100;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
+
+
+    <!-- Start Navbar Section -->
+
+    <nav>
+
+        <div class="upper-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="upper-content">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="upper-content">
+                            <ul>
+                                <li><a href="#"><i class="fa-solid fa-envelope"></i>info@gmail.com</a></li>
+                                <li><a href="#"><i class="fa-solid fa-location-crosshairs"></i>السعودية -الرياض</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="lower-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="lower-content">
+                        <img src="images/logo.png">
+
+                        <ul>
+                            <li>
+                                <a href="#"><img src="images/britishflag.png">English</a>
+                            </li>
+                            <li><a href="#">تواصل معنا</a></li>
+                            <li><a href="#">حجز موعد</a></li>
+                            <li><a href="#">برامج الكوتشنج</a></li>
+                            <li><a href="#">عن المدرب</a></li>
+                            <li><a href="#">من نحن</a></li>
+                            <li><a href="#">الرئيسية</a></li>
+                        </ul>
+
+                        <!-- <button class="open-side-nav">
+                        <i class="fa-solid fa-bars"></i>
+                    </button> -->
+
+                        <a class="nav-toggle">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+
+
+
+    <!-- End Navbar Section -->
+
+
+
+    <!-- Start Landing Section -->
+
+    <section class="landing-section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="landing-content-img">
+                        <div data-aos="fade-up-left" class="upper "></div>
+                        <img data-aos="fade-in" src="images/omar-coach-slide.png">
+                        <div data-aos="fade-down-right" class="lower "></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                    <div class="landing-content ">
+                        <h1>عمر بغدادي</h1>
+                        <p>
+                            <span class="auto-type "></span>
+                        </p>
+                        <a href="# ">
+                        احجز الان 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- End Landing Section -->
+
+
+    <!-- Start About Section -->
+
+    <section class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs12">
+                    <div data-aos="flip-right" class="about-content">
+                        <img src="images/aims.webp">
+
+                        <h2>أهدافنا</h2>
+
+                        <h3>2020 بناء الوعي عن أهمية وفوائد الاستشارة والتدريب</h3>
+                        <h3>2023 الانتشار في ارجاء المملكة العربية السعودية وجذب مدريين للانضمام إلينا</h3>
+                        <h3>2025 الانتشار حول دول الخليج والدول العربية</h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs12">
+                    <div data-aos="flip-left" class="about-content">
+                        <img src="images/task.png">
+
+                        <h2>مهمتنا</h2>
+
+                        <h3>خطوة بخطوة نشارككم أجزاء من حياتكم لتصلوا الى مبتغاكم</h3>
+
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs12">
+                    <div data-aos="flip-right" class="about-content">
+                        <img src="images/vison.png">
+
+                        <h2>رؤيتنا</h2>
+
+                        <h3>أن نكون الأكثر ثقة في تدريبكم لتتمكنوا من اكتشاف قدراتكم وتحقيق أهدافكم</h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- End About Section -->
+
+
+    <!-- Start trainer Section -->
+    <section class="trainer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="trainer-content">
+                        <h1><span class="yellow">عمر</span> بغدادي </h1>
+                        <h2>مدرب</h2>
+
+                        <div class="line"></div>
+
+                        <p><i class="fa-solid fa-quote-left"></i>المدرب يمتلك خبرة 10 سنوات في المؤسسات داخل المملكة العربية السعودية ممتدة من الشركات الكبيرة إلى الشركات الصغيرة. حاصل على ماجستير إدارة أعمال في التسويق، وحاصل على شهادات متعددة في مجال الأعمال
+                            التجارية وتطوير الذات، برنامج التفاوض من كلية القانون من جامعة هارفرد، والحزام الأخضر 6 سيجما، والعادات السبعة للأشخاص الأكثر فعالية، وبناء الفريق، والتفكير الإبداعي، والتخطيط الفعال وغيرها.
+
+                            <i class="fa-solid fa-quote-right"></i>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="trainer-content">
+                        <div class="img">
+                            <img src="images/coach-omar.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- End trainer Section -->
+
+
+
+    <!-- Start Programs Section -->
+
+    <section class="programs-section">
+        <h1>برامج الكوتشنج</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="program-content">
+                        <img src="images/p1.jpg">
+                        <h4><span class="std-number"><i class="fa-solid fa-users"></i> 19 عددالمشتركين</span> <span class="cont-number"><i class="fa-solid fa-folder"></i> 7 عدد المحتوى</span></h4>
+                        <h1><i class="fa-solid fa-angle-down"></i> التدريب الإحترافي</h1>
+
+                        <div class="text">
+                            <h2>
+                                يركز البرنامج على مساعدة الأفراد في العثور على شغفهم وإيجاد أهدافهم وتحقيقها، سوف نساعدكم في تحديد الاهداف واشعال شغفكم.</h2>
+                            <h2>مدة البرنامج 6 أسابيع يتضمن 6 اجتماعات مدة كل واحدة 60 دقيقة.</h2>
+                            <h2>
+                                يشمل البرنامج على مقالات للقراءة ومقاطع فيديو للمشاهدة ومجموعة مختارة من الكتب ومفكرة شخصية لتدوين تساؤلاتكم واستنتاجاتكم.</h2>
+                            <h2>
+                                البرنامج متاح للأفراد والمجموعات.</h2>
+                        </div>
+
+                        <button class="open-inner-content">على ماذا يشمل التدريب ؟</button>
+                        <div class="inner-content">
+                            <div class="info">
+                                <i class="fa fa-close close-inner-content"></i>
+                                <div class="header">
+                                    <h1>التدريب الإحترافي</h1>
+                                    <h2>تشمل موضوعات البرنامج على:</h2>
+                                </div>
+
+                                <ul>
+                                    <li>اكتشاف شغفك<i class="fa-solid fa-check"></i></li>
+                                    <li>معرفة السبب<i class="fa-solid fa-check"></i></li>
+                                    <li>اختبار طموحك وشغفك<i class="fa-solid fa-check"></i></li>
+                                    <li>القضاء على مخاوفك<i class="fa-solid fa-check"></i></li>
+                                    <li>التخلص من الماضي<i class="fa-solid fa-check"></i></li>
+                                    <li>بناء دائرة الدعم الخاص بك<i class="fa-solid fa-check"></i></li>
+                                    <li>تحويل الفشل إلى نجاح<i class="fa-solid fa-check"></i></li>
+                                    <li>فهم المخاطر والتحديات والفجوات المهنية<i class="fa-solid fa-check"></i></li>
+                                    <li>بناء خطتك المهنية<i class="fa-solid fa-check"></i></li>
+                                </ul>
+
+                                <a href="#">احجز موعدك الان</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="program-content">
+                        <img src="images/p2.jpg">
+
+                        <h4><span class="std-number"><i class="fa-solid fa-users"></i> 19 عددالمشتركين</span> <span class="cont-number"><i class="fa-solid fa-folder"></i> 7 عدد المحتوى</span></h4>
+                        <h1><i class="fa-solid fa-angle-down"></i> تدريب المهارات القيادية</h1>
+                        <div class="text">
+                            <h2>
+
+                                هي مسؤولية كبيرة أن تشغل منصب مدير أو مسؤول في مكان عملك أو حتى في عملك الخاص، أو ان كنت تريد أن تسعى لبلوغ أهداف جديدة لنفسك أو لعملك، فمن المهم ان تكون مجهزا بالوسائل والأدوات المناسبة والأفكار الصحيحة، والا ستكون معرض للفشل لا قدر الله.</h2>
+                            <h2>فإنك تحتاج لأن تكون قائد يتمتع بتقنيات مهنية مهمة كالعصف الذهني، والمراقبة والتخطيط، والتحكم بنجاح، ورصد الهدف، وإدارة العمل بشكل صحيح، يتم من خلال رصد ومتابعة ودراسة ردود الأفعال وبالتالي النتيجة تكوين فريق مترابط وقوي.</h2>
+                            <h2>
+
+                                مدة البرنامج 6أسابيع يتضمن 6 اجتماعات مدة كل واحدة 60 دقيقة.</h2>
+                            <h2>
+                                يشمل البرنامج على مقالات للقراءة ومقاطع فيديو للمشاهدة ومجموعة مختارة من الكتب وتقنيات تستخدم في ساحة العمل.</h2>
+                            <h2>البرنامج متاح للأفراد والمجموعات.
+                            </h2>
+
+
+                        </div>
+                        <button class="open-inner-content">على ماذا يشمل التدريب ؟</button>
+
+                        <div class="inner-content">
+                            <div class="info">
+                                <i class="fa fa-close close-inner-content"></i>
+                                <div class="header">
+                                    <h1>تدريب المهارات القيادية</h1>
+                                    <h2>تشمل موضوعات البرنامج على:</h2>
+                                </div>
+
+                                <ul>
+                                    <li>فهم الاعتقادات والتوقعات<i class="fa-solid fa-check"></i></li>
+                                    <li>فهم الواقع مقابل الافتراضات<i class="fa-solid fa-check"></i></li>
+                                    <li>تحديد النتائج والأهداف<i class="fa-solid fa-check"></i></li>
+                                    <li>إدارة التغيير<i class="fa-solid fa-check"></i></li>
+                                    <li>تطوير خطط العمل<i class="fa-solid fa-check"></i></li>
+                                    <li>مهارات مهمة في بيئة العمل<i class="fa-solid fa-check"></i></li>
+                                    <li>التنفيذ من خلال التصور<i class="fa-solid fa-check"></i></li>
+                                    <li>مراجعة وفهم التنفيذ<i class="fa-solid fa-check"></i></li>
+                                    <li>ترابط وتوافق الفريق<i class="fa-solid fa-check"></i></li>
+                                    <li>بناء المسؤولية<i class="fa-solid fa-check"></i></li>
+                                    <li>تطوير الذات والآخرين<i class="fa-solid fa-check"></i></li>
+                                </ul>
+
+                                <a href="#">احجز موعدك الان</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="program-content">
+                        <img src="images/p3.jpg">
+                        <h4><span class="std-number"><i class="fa-solid fa-users"></i> 19 عددالمشتركين</span> <span class="cont-number"><i class="fa-solid fa-folder"></i> 7 عدد المحتوى</span></h4>
+                        <h1><i class="fa-solid fa-angle-down"></i> التدريب الشخصي</h1>
+                        <div class="text">
+                            <h2>
+                                عند اتخاذ قرار كبير أو صعب أو عند الحاجة لأخذ أراء الآخرين خلال حياتنا اليومية المزدحمة، كلما كبر حجم القرار مما يتوجب منك الكثير من الجهد والوقت والاحتياج الى دقة أكبر وفهم أوسع للقرار ونتائجه.</h2>
+                            <h2>فلابد من أن تقفز وتخطو الخطوة وتثق بنفسك، ويمكنني خلال هذه الرحلة إرشادك خلال ذلك بعناية فائقة وتخطيط. </h2>
+                            <h2>
+                                مدة البرنامج حسب احتياجك تصل إلى 10 اجتماعات مدة كل واحدة 60 دقيقة.</h2>
+                            <h2>
+                                يشمل البرنامج على مقالات للقراءة ومقاطع فيديو للمشاهدة.</h2>
+
+                            <h2>
+                                البرنامج متاح للأفراد والمجموعات.
+
+                            </h2>
+
+
+                        </div>
+
+                        <button class="open-inner-content">على ماذا يشمل التدريب ؟</button>
+
+                        <div class="inner-content">
+                            <div class="info">
+                                <i class="fa fa-close close-inner-content"></i>
+                                <div class="header">
+                                    <h1>تدريب المهارات القيادية</h1>
+                                    <h2>تشمل موضوعات البرنامج على:</h2>
+                                </div>
+
+                                <ul>
+
+                                </ul>
+
+                                <a href="#">احجز موعدك الان</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- End Programs Section -->
+
+
+
+
+
+    <!-- Start Reviews Section-->
+    <div class="container">
+        <div class="row">
+            <section class="reviews-section">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>اراء المشتركين</h2>
+                        <span class="section-separator"></span>
+                    </div>
+                </div>
+                <div class="testimonials-carousel-wrap">
+                    <div class="listing-carousel-button listing-carousel-button-next"></div>
+                    <div class="listing-carousel-button listing-carousel-button-prev">
+                        </i>
+                    </div>
+                    <div class="testimonials-carousel">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testi-item">
+                                        <div class="testi-avatar"><img src="images/coach-omar.png"></div>
+                                        <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                        <div class="testimonials-text">
+                                            <div class="listing-rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                                                it to make a type specimen book.</p>
+                                            <a href="#" class="text-link"></a>
+                                            <div class="testimonials-avatar">
+                                                <h3>John Doe</h3>
+                                                <h4>Owner</h4>
+                                            </div>
+                                        </div>
+                                        <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                                    </div>
+                                </div>
+
+                                <!--second--->
+                                <div class="swiper-slide">
+                                    <div class="testi-item">
+                                        <div class="testi-avatar"><img src="images/coach-omar.png"></div>
+                                        <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                        <div class="testimonials-text">
+                                            <div class="listing-rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                                                it to make a type specimen book.</p>
+                                            <a href="#" class="text-link"></a>
+                                            <div class="testimonials-avatar">
+                                                <h3>Doe Boe</h3>
+                                                <h4>Director</h4>
+                                            </div>
+                                        </div>
+                                        <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                                    </div>
+                                </div>
+                                <!--third-->
+
+                                <div class="swiper-slide">
+                                    <div class="testi-item">
+                                        <div class="testi-avatar"><img src="images/coach-omar.png"></div>
+                                        <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                        <div class="testimonials-text">
+                                            <div class="listing-rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                                                it to make a type specimen book.</p>
+                                            <a href="#" class="text-link"></a>
+                                            <div class="testimonials-avatar">
+                                                <h3>Boe Doe</h3>
+                                                <h4>Developer</h4>
+                                            </div>
+                                        </div>
+                                        <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                                    </div>
+                                </div>
+
+                                <!--fourth-->
+                                <div class="swiper-slide">
+                                    <div class="testi-item">
+                                        <div class="testi-avatar"><img src="images/coach-omar.png"></div>
+                                        <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                        <div class="testimonials-text">
+                                            <div class="listing-rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                                                it to make a type specimen book.</p>
+                                            <a href="#" class="text-link"></a>
+                                            <div class="testimonials-avatar">
+                                                <h3>Doe John</h3>
+                                                <h4>Designer</h4>
+                                            </div>
+                                        </div>
+                                        <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                                    </div>
+                                </div>
+                                <!--testi end-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tc-pagination"></div>
+                </div>
+            </section>
+
+
+
+
+            <section id="galary" class="landing">
+                <h1>معرض الصور</h1>
+                <div class="slider">
+                    <img class="slide" src="images/p1.jpg">
+                    <img class="slide" src="images/p2.jpg">
+                    <img class="slide" src="images/p3.jpg">
+                    <img class="slide" src="images/4.jpg">
+                    <img class="slide" src="images/5.jpg">
+                    <img class="slide" src="images/6.jpg">
+                    <img class="slide" src="images/7.jpg">
+                </div>
+
+                <div class="slider-nav">
+                    <img class="slide" src="images/p1.jpg">
+                    <img class="slide" src="images/p2.jpg">
+                    <img class="slide" src="images/p3.jpg">
+                    <img class="slide" src="images/4.jpg">
+                    <img class="slide" src="images/5.jpg">
+                    <img class="slide" src="images/6.jpg">
+                    <img class="slide" src="images/7.jpg">
+                </div>
+
+            </section>
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <!-- End Reviews Section -->
+
+
+
+
+
+
+    <!-- Start Footer Section  -->
+
+    <footer id="social">
+
+        <img src="images/logo.png">
+        <ul class="short-nav">
+            <li><a href="#">تواصل معنا</a></li>
+            <li><a href="#">حجز موعد</a></li>
+            <li><a href="#">برامج الكوتشنج</a></li>
+            <li><a href="#">عن المدرب</a></li>
+            <li><a href="#">من نحن</a></li>
+            <li><a href="#">الرئيسية</a></li>
+        </ul>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="footer-content">
+                    <h2>
+                        © 2022 جمبع الحقوق محفوظة للمدرب</h2>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="footer-content">
+                    <h2>للدعم الفني او الشكاوى تواصل معنا عبر</h2>
+                    <a href="mailto:Arabh2021operation@gmail.com">info@gmail.com</a>
+                    <h2>او واتساب</h2>
+                    <a href="tel:+966547783109">966547783109</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="footer-content">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-snapchat"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- End Footer Section -->
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
+    <script>
+        AOS.init({
+            offset: 100,
+            delay: 100,
+            duration: 2000,
+        });
+    </script>
+
+    <script src="js/jquery-3.6.0.min.js "></script>
+
+    <script src="js/bootstrap.min.js "></script>
+    <script type="text/javascript " src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js "></script>
+    <script src="js/vanilla-tilt.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12 "></script>
+    <script defer>
+        jQuery(document).ready(function() {
+            jQuery('.loading').fadeOut(1000);
+        });
+    </script>
+    <script src="js/front.js "></script>
+</body>
+
+
+
+</html>
+
+</html>
