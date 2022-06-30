@@ -1,0 +1,594 @@
+/* Start General Styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+    font-family: 'Cairo', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+}
+
+p {
+    text-align: justify !important;
+    text-align-last: right !important;
+}
+
+.content {
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.header h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 29px;
+}
+
+.header .spans span {
+    height: 10px;
+    width: 10px;
+    background-color: #1abc9c;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+
+/* End General Styling */
+
+
+/* Start Navbar section styling */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    z-index: 100;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: 0.3s;
+}
+
+.navbar.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    z-index: 100;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #e3e3e3;
+    transition: 0.3s;
+}
+
+.navbar .navbar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+    direction: rtl;
+}
+
+.navbar .navbar-container .navbar-elements {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    gap: 37px;
+}
+
+.navbar .navbar-container .navbar-elements a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-content {
+    margin-bottom: 50px;
+}
+
+.navbar.active .navbar-container .navbar-elements li.active {
+    color: #101111;
+    transition: 0.3s;
+    background-color: #1abc9c;
+    color: #fff;
+    border-radius: 5px;
+    padding: 9px;
+}
+
+.navbar.active .navbar-container .navbar-elements li.active a {
+    color: #fff;
+}
+
+.navbar .navbar-container .logo {
+    transition: 0.3s;
+    width: 50px;
+}
+
+.navbar.active .navbar-container .logo {
+    width: 56px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.navbar.active .navbar-container .navbar-elements a {
+    color: #101111;
+    transition: 0.3s;
+}
+
+
+/* End Navbar Section Styling */
+
+
+/* Start landing Section Styling */
+
+.banner {
+    background-image: url("../images/land.webp");
+    height: 88vh;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #10111194;
+}
+
+.banner .waves {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+.landing .landing-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.landing .landing-content h1 {
+    text-align: center;
+    color: #1abc9c;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.landing .landing-content h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    filter: drop-shadow(2px 4px 6px black);
+    font-weight: bold;
+}
+
+
+/* End Landing Section Styling */
+
+
+/* Start What Section Styling*/
+
+.what {
+    margin-bottom: 80px;
+}
+
+.what p {
+    text-align: right;
+    line-height: 24px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #101111;
+}
+
+
+/* End What Section Styling */
+
+
+/* Start Important Section */
+
+.important {
+    padding: 15px;
+    background-color: #eee;
+    margin-bottom: 30px;
+}
+
+.important .content p {
+    font-size: 15px;
+    font-weight: 700;
+    text-align: right;
+}
+
+
+/* End Important Section */
+
+
+/* Start Our Offers Section Styling */
+
+.our-offers {
+    margin-bottom: 30px;
+}
+
+.our-offers .content img {
+    height: 250px;
+    border-radius: 5px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.our-offers .content h1 {
+    font-size: 22px;
+    text-align: right;
+}
+
+.our-offers .content h2 {
+    font-size: 17px;
+    text-align: justify;
+    line-height: 26px;
+    text-align-last: right;
+}
+
+
+/* End Our Offers Section Styling */
+
+
+/* Start Pricing Section */
+
+.pricing {
+    background-color: #eee;
+}
+
+.pricing h1:not(.header h1) {
+    text-align: right;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.pricing .content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.pricing .content .price {
+    font-size: 29px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.pricing .description {
+    text-align: right;
+    padding: 15px;
+    width: 60%;
+}
+
+.pricing .description h1 {
+    font-size: 23px
+}
+
+.pricing .description p {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.pricing .image img {
+    width: 250px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+@media(max-width: 990px) {
+    .pricing .image img {
+        width: 100%;
+    }
+    .pricing .description {
+        width: 100%;
+    }
+}
+
+.special-tag {
+    font-size: 14px;
+    color: #4b4b4b;
+    display: inline-block;
+}
+
+
+/* End Pricing Section */
+
+
+/* Start Contact Us Section */
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 26px;
+}
+
+.contact-us form textarea {
+    height: 200px;
+    width: 90%;
+    border-radius: 5px;
+    text-align: right;
+    border: none;
+    outline: none;
+    border: 1px solid #989797;
+    font-size: 21px;
+    padding: 5px;
+}
+
+.contact-us form button {
+    outline: none;
+    border: none;
+    font-size: 18px;
+    width: 90%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #1abc9c;
+    color: #Fff;
+    border-radius: 5px;
+    height: 50px;
+}
+
+.contact-us form input {
+    border: 1px solid #a3a3a3;
+    border-radius: 3px;
+    height: 50px;
+    width: 90%;
+    text-align: right;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 19px;
+    padding: 5px;
+}
+
+.contact-us .map-content {
+    height: 45vh;
+    border-radius: 13px;
+    padding: 7px;
+}
+
+.contact-us .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.contact-us .content h1 {
+    font-size: 19px;
+}
+
+.contact-us .content a {
+    font-size: 19px;
+}
+
+.contact-us .content h2 {
+    font-size: 19px;
+}
+
+
+/* End Contact Us Section */
+
+
+/* Start Footer Section */
+
+.footer .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer .footer-row ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    gap: 21px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.footer .footer-row ul li a {
+    color: #101111;
+    text-decoration: none;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.footer .footer-row ul li a:hover {
+    color: #1abc9c;
+}
+
+.footer .footer-row .text-content h1 {
+    font-size: 19px;
+    text-align: right;
+}
+
+.footer .footer-row .text-content p {
+    text-align: right;
+}
+
+
+/* End Footer Section */
+
+
+/* Start Client Section Styling */
+
+.client-zone {
+    margin-top: 100px;
+    height: 70vh;
+}
+
+.client-zone .form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-zone .form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    min-width: 50%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #eee;
+    border-radius: 5px;
+    border-top: 1px solid #1abc9c;
+}
+
+.client-zone .form input {
+    width: 250px;
+    height: 40px;
+    border: 1px solid #a1a1a1;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.client-zone .form button {
+    width: 250px;
+    height: 40px;
+    background-color: #1abc9c;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+
+/* End Client Section Styling */
+
+
+/* start navbar mobile */
+
+.navbar-container-mobile {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    padding: 16px;
+    background-color: #fff;
+    height: 55px;
+    border-bottom: 1px solid #9d9d9d;
+    display: none;
+}
+
+.navbar-container-mobile button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.navbar-container-mobile img {
+    width: 48px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
+
+.navbar-container-mobile ul {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #101111;
+    z-index: 100000;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    display: none;
+}
+
+.navbar-container-mobile ul li a {
+    color: #fff;
+    font-size: 20px;
+}
+
+.navbar-container-mobile ul>i {
+    font-size: 30px;
+    color: #Fff;
+    margin-bottom: 21px;
+    cursor: pointer;
+    top: 30px;
+    right: 30px;
+    position: absolute;
+}
+
+@media(max-width: 990px) {
+    .navbar {
+        display: none;
+    }
+    .navbar-container-mobile {
+        display: block;
+    }
+}
+
+.content img {
+    width: 100%;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+
+/* end navbar mobile style */
