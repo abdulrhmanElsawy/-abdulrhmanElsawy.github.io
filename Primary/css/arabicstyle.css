@@ -1,0 +1,80 @@
+.hero-content-2 {
+    text-align: right;
+    direction: rtl;
+}
+
+#about .container {
+    direction: rtl;
+}
+
+.devider-bottom:after {
+    left: 300px;
+}
+
+#features #features-arabic {
+    direction: rtl;
+}
+
+.banners .banner-content {
+    direction: rtl;
+    text-align: right;
+}
+
+footer #footer-first {
+    direction: rtl;
+}
+
+.mobile-menu .mean-bar {
+    position: relative;
+    direction: ltr;
+}
+
+.mobile-menu .mean-bar .meanmenu-reveal {
+    left: 0 !important;
+}
+
+.header-bottom {
+    direction: rtl;
+}
+
+.main-menu>ul>li:last-child {
+    margin-right: 40px;
+}
+
+.banners .banners-content {
+    direction: rtl;
+}
+
+.banners .hover-image {
+    right: 0;
+}
+
+.banners .banners-content a {
+    text-align: left;
+}
+
+.banners .hover-image a {
+    padding: 15px;
+    text-align: center;
+}
+
+.box-default {
+    padding: 10px 50px 0 0px;
+    direction: ltr;
+}
+
+.box-default-icon {
+    left: 90%;
+}
+
+.box-default-description {
+    text-align: right;
+}
+
+.box-default-title {
+    text-align: right;
+}
+
+.Located-Text {
+    text-align: right;
+}
