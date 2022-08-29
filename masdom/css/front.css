@@ -227,6 +227,7 @@
     /* End landing Section */
     .about{
         margin-top: 50px;
+       overflow-x: hidden;
     }
 
     .about .row>h1{
