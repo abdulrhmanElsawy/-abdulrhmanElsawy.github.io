@@ -1156,4 +1156,18 @@ footer .row>h2{
         font-size: 69px;
         
     }
+   .landing .landing-about {
+    position: relative;
+    z-index: 1;
+    bottom: -26%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 12px;
+    box-shadow: 0px 0px 7px rgb(0 0 0 / 37%);
+    width: 75%;
+    margin-top: 58px;
+    margin-bottom: 58px;
+}
+
 }
