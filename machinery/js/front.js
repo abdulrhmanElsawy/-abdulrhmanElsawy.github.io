@@ -1,6 +1,18 @@
 $(document).ready(function() {
 
 
+
+    $(".categories-names .header").click(function(){
+        $(this).toggleClass("active");
+        $(this).next().slideToggle(400);
+    })
+
+    setTimeout(removeLoading,3000);
+
+    function removeLoading(){
+        $(".loading").fadeOut(500);
+    }
+
     
     /*--
             Sliders
@@ -11,6 +23,7 @@ $(document).ready(function() {
         fade: true,
         dots: false,
         autoplay: true,
+        arrows: false,
         autoplaySpeed: 10000,
         prevArrow: '<button class="slick-prev"><i class="fa fa-angle-left"></i></button>',
         nextArrow: '<button class="slick-next"><i class="fa fa-angle-right"></i></button>',
