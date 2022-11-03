@@ -608,5 +608,271 @@
         /* End Footer Section */
 
 
-    
-    
+
+        /* Start Category Page */
+
+        .category-header{
+            width: 100%;
+            background-color: #f57d00;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            height: 150px;
+            overflow: initial;
+            margin-bottom: 191px;
+        }
+
+        
+        .category-header .category-header-content{
+            background-image: url(images/30.jpg);
+            width: 90%;
+            min-height: 250px;
+            border-radius: 25px;
+            margin-top: 153px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .category-header .category-header-content .text{
+                width: 100%;
+                min-height: 250px;
+                border-radius: 25px;
+                color: #fff;
+                background-color: #00000085;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                padding: 18px;
+        }
+
+        .category-header .category-header-content .text h1{
+            margin: 0;
+            font-size: 39px;
+            font-weight: 600;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #f57d00;
+        }
+
+        .category-header .category-header-content .text h2{
+            font-size: 19px;
+            padding: 5px;
+            background-color: #f57d005c;
+        }
+
+        .category-products{
+            margin-bottom: 50px;
+        }
+
+        .category-products .row>h1{
+            font-weight: 600;
+            font-size: 30px;
+        }
+
+        
+        .category-products .sub-category .sub-head{
+            font-size: 15px;
+        }
+
+        .category-products .sub-category .sub-head h3{
+            font-size: 17px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 400;
+            background-color: #d5d5d573;
+            height: 40px;
+            padding: 6px;
+            border-bottom: 1px solid #a9a9a9;
+            cursor: pointer;
+        }
+
+        .category-products .sub-category ul{
+            background-color: #d9d9d969;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 7px;
+            gap: 16px;
+            font-size: 16px;
+            display: none;
+            font-weight: 400;
+        }
+
+        .category-products .sub-category ul li{
+            width: 100%;
+        }
+
+        
+        .category-products .sub-category ul a{
+            color: #535353;
+            font-weight: 500;
+            width: 100%;
+            display: flex;
+            border-bottom: 1px solid #a8a8a8;
+            padding-bottom: 4px;
+        }
+
+        .sub-product-section p{
+            text-align: left;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 36px;
+        }
+
+        .sub-product-section img{
+            width: 100%;
+            height: 450px;
+            object-fit: contain;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+
+
+
+
+
+        .category-products .contact-form{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .category-products .contact-form p{
+            font-size: 17px;
+            font-weight: 400;
+            color: #545454;
+        }
+
+        .category-products .contact-form form{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .category-products .contact-form form>div{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .category-products .contact-form form>div input{
+            width: 48%;
+            height: 47px;
+            border-radius: 15px;
+            border: 1px solid #b4b4b4;
+            font-size: 17px;
+            padding-left: 15px;
+        }
+
+        .category-products .contact-form form textarea{
+            width: 100%;
+            height: 150px;
+            border-radius: 15px;
+            border: 1px solid #b4b4b4;
+            font-size: 17px;
+            padding-left: 15px;
+            padding-top: 10px;
+        }
+
+        .category-products .contact-form form button{
+            width: 100%;
+            height: 50px;
+            border-radius: 15px;
+            border: none;
+            outline: none;
+            background-color: #f57d00;
+            color: #fff;
+            font-size: 19px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+
+        .category-products .contact-form form button:hover{
+            background-color: #c76803;
+        }
+
+
+
+
+
+
+
+
+
+        /* End Category Page */
+
+
+
+        /* Start nav-mobile Section */
+
+        .nav-mobile{
+
+        }
+
+        .nav-mobile .main-elements{
+            
+        }
+
+        .nav-mobile .main-elements>li{
+            
+        }
+        .nav-mobile .main-elements>li>a{
+            
+        }
+
+        .nav-mobile .main-elements>li .sub-elements{
+            
+        }
+
+        .nav-mobile .main-elements>li .sub-elements li{
+            
+        }
+
+        .nav-mobile .main-elements>li .sub-elements li a{
+            
+        }
+
+        .nav-mobile div{
+
+        }
+
+        .nav-mobile .social{
+
+        }
+
+
+        
+        .nav-mobile .social li{
+
+        }
+
+        .nav-mobile .social li a{
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* End nav-mobile Section */

@@ -13,4 +13,9 @@ $(document).ready(function() {
     });
 
 
+    $(".category-products .sub-category .sub-head h3").click(function(){
+        $(this).parent().next().slideToggle(400);
+        $(this).parent().next().css({display:"flex"});
+    })
+
 });
