@@ -7,9 +7,13 @@
 }
 
 body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     background-color: #fff;
     scroll-behavior: smooth;
+}
+
+section{
+    overflow-x: hidden !important;
 }
 
 .disclaimer {
@@ -1027,5 +1031,47 @@ footer .lower-content .right li a{
         border-bottom: 1px solid #4e4e4e;
         flex-wrap: wrap;
     }
+
+    footer {
+        margin-top: 58px;
+        padding-top: 20px;
+        background-color: #222;
+        color: #fff;
+        overflow-x: hidden;
+        padding: 19px;
+    }
+
+    footer .lower-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        flex-wrap: wrap;
+    }
     
+}
+
+
+.whatsapp {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    background-color: #307a33;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    font-size: 34px;
+    padding: 10px;
+    text-align: center;
+    z-index: 100;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    text-decoration: none;
+    transform: 0.3s;
+    -webkit-transform: 0.3s;
+    -moz-transform: 0.3s;
+    -ms-transform: 0.3s;
+    -o-transform: 0.3s;
 }
