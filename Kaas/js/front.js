@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 
 
-    $(".doowr16-content>div").click(function(){
+    $(".doowr16-content>div:not(.lines)").click(function(){
         var divId = $(this).attr('id');
 
 
@@ -80,7 +80,7 @@ $(document).ready(function() {
 
 
     
-    $(".doowr8-content>div").click(function(){
+    $(".doowr8-content>div:not(.lines)").click(function(){
         var divId = $(this).attr('id');
 
 
@@ -140,7 +140,7 @@ $(document).ready(function() {
 
 
 
-    $(".doowr4-content>div").click(function(){
+    $(".doowr4-content>div:not(.lines)").click(function(){
         var divId = $(this).attr('id');
 
 
@@ -202,7 +202,7 @@ $(document).ready(function() {
 
 
 
-    $(".doowr2-content>div").click(function(){
+    $(".doowr2-content>div:not(.lines)").click(function(){
         var divId = $(this).attr('id');
 
 
