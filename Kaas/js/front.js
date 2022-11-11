@@ -42,12 +42,11 @@ $(document).ready(function() {
 
             var element2 = `
             <img src="${thisImgSrc}">
-            <h1>${thisText}</h1>
             `;
 
             $(`#${divId}`).empty();
 
-            $(`#${divId}`).html(img + text);
+            $(`#${divId}`).html(img);
 
             $(this).addClass("active");
 
@@ -112,7 +111,7 @@ $(document).ready(function() {
 
             $(`#${divId}`).empty();
 
-            $(`#${divId}`).html(img + text);
+            $(`#${divId}`).html(img);
 
             $(this).addClass("active");
 
@@ -120,7 +119,6 @@ $(document).ready(function() {
 
             var element2 = `
             <img src="${thisImgSrc}">
-            <h1>${thisText}</h1>
             `;
             $(`#spot_${divId}`).empty();
             console.log(`#spot_${divId}`);
@@ -173,7 +171,7 @@ $(document).ready(function() {
 
             $(`#${divId}`).empty();
 
-            $(`#${divId}`).html(img + text);
+            $(`#${divId}`).html(img);
 
             $(this).addClass("active");
 
@@ -181,7 +179,6 @@ $(document).ready(function() {
 
             var element2 = `
             <img src="${thisImgSrc}">
-            <h1>${thisText}</h1>
             `;
             $(`#spot_${divId}`).empty();
             console.log(`#spot_${divId}`);
@@ -233,13 +230,12 @@ $(document).ready(function() {
 
             $(`#${divId}`).empty();
 
-            $(`#${divId}`).html(img + text);
+            $(`#${divId}`).html(img);
 
             $(this).addClass("active");
 
             var element2 = `
             <img src="${thisImgSrc}">
-            <h1>${thisText}</h1>
             `;
             $(`#spot_${divId}`).empty();
             console.log(`#spot_${divId}`);
