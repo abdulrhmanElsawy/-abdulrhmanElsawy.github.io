@@ -932,6 +932,60 @@
     </section>
 
 
+
+
+
+    
+    
+    <!-- Start Header Section -->
+
+
+
+    <div class="header">
+        <h1>  البطل </h1>
+    </div>
+
+
+    
+    <section   class="doowr1">
+
+        <div class="pop-up">
+
+            <div class="overlay"></div>
+
+            <div class="pop-content">
+
+                <i class="fa fa-close close-popup"></i>
+
+                <h1>البطل</h1>
+
+                <ul>
+                    
+                </ul>
+
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row" style="justify-content: center;align-items:center;display: flex;">
+
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                    <div   data-aos="fade-right" class="doowr1-content doowr">
+                        <div id="31" class="upper">
+                            <h1>اختر الدولة</h1>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- Start bUTTONS section -->
 
     <div class="buttons">
@@ -957,13 +1011,37 @@
 
             <h1>شاركنا توقعاتك على تويتر</h1>
 
-            <a target="_blank" href="http://twitter.com/share?text=@halfmillion_sa هذا توقعي&hashtags=هاف_مليون_في_كأس_العالم2022">
+            <a target="_blank" href="http://twitter.com/share?text=هذا توقعي @halfmillion_sa&hashtags=هاف_مليون_في_كأس_العالم2022">
                 مشاركة 
                 <i class="fa-brands fa-twitter"></i>
             </a>
 
+            <img style="width: 100%;margin-top: 25px;" class="imgpopup" src="" alt=".">
+
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+    <div class="pop-up max-min">
+
+<div class="overlay"></div>
+
+<div class="pop-content">
+
+    <i class="fa fa-close close-max-min-popup"></i>
+
+    <img style="height: 84%;
+    object-fit: contain;width: 100%;margin-top: 25px;" class="imgpopup" src="" alt=".">
+
+</div>
+</div>
 
 
 
@@ -1113,6 +1191,13 @@
 
         <div class="middle">
 
+            <div style="background-color: #cf9e07;" class="match">
+                <div id="spot_31">
+                    <img src="flags/austrulia.png">
+                    <h1>أستراليا</h1>
+                </div>
+            </div>
+
             <img src="images/worldcup.png">
 
             <div class="match">
@@ -1133,7 +1218,16 @@
 
             <h1>كأس العالم  2022
             </h1>
-            <img src="images/logo.svg">
+           
+            <div class="image-logo">
+                <div>
+                    <span class="number1">1</span>
+                    <span class="number2"></span>
+                    <span class="number3">2</span>
+                </div>
+                <h1>M</h1>
+            </div>
+
         </div>
 
 
@@ -1281,16 +1375,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
     <script src="js/jquery-3.6.0.min.js"></script>
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -1315,6 +1399,8 @@
         function saveCapture(element) {
         html2canvas(element).then(function(canvas) {
             download(canvas.toDataURL("image/png"));
+
+            $(".imgpopup").attr("src",canvas.toDataURL("image/png"));
         })
         }
 
