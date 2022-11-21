@@ -9,16 +9,16 @@ $(document).ready(function() {
         speed: 300,
         slidesToShow: 1,
         centerMode: true,
-        // autoplay:true,
-        // autoplayspeed:2000,
+        autoplay:true,
+        autoplayspeed:2000,
         variableWidth: true
     });
 
     $('.rates-slider .slider').slick({
         dots: false,
         arrows:false,
-        // autoplay:true,
-        // autoplayspeed:2000,
+        autoplay:true,
+        autoplayspeed:2000,
     });
     
 
