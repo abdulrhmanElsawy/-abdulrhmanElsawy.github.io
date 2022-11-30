@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+    $(".landing .side-nav .header").click(function(){
+        $(this).next().slideToggle(400)
+    })
+
+    $('.landing .upper-slider .slider').slick({
+        dots:false,
+        arrows:false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
 
 
     $(".categories-names .header").click(function(){
