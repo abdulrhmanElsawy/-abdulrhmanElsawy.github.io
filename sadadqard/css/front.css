@@ -496,9 +496,11 @@ background: linear-gradient(101deg, rgba(0,142,180,1) 0%, rgba(128,197,91,1) 100
     }
 
     .services .service h1{
-        font-size: 23px;
-        font-family: 'Reem Kufi', sans-serif;
+        font-size: 19px;
         color: #fff;
+        text-align: center;
+        line-height: 27px;
+        font-weight: 800;
     }
 
     .services .service i{
