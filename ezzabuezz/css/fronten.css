@@ -1,0 +1,14 @@
+
+@font-face {
+    font-family: AMERSN;
+    src: url('../fonts/AMERSN__.ttf') format('truetype');
+}
+
+body {
+    font-family: AMERSN, sans-serif;
+}
+
+* {
+        font-family: AMERSN, sans-serif;
+
+    }
