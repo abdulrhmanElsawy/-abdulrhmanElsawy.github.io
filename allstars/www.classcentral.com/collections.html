@@ -5036,7 +5036,6 @@
     <div data-template="notifications"></div>
 
 
-    
 <div id="google_translate_element"></div>
 
 
@@ -5049,7 +5048,7 @@
   window.onload = function() {
     googleTranslateElementInit();
     setTimeout(function() {
-      var languageSelect = document.querySelector('.goog-te-combo');
+      var languageSelect = document.querySelector('#google_translate_element');
       languageSelect.value = 'hi'; // Set Hindi as the default translation language
       languageSelect.dispatchEvent(new Event('change')); // Dispatch change event to trigger translation
     }, 1000);

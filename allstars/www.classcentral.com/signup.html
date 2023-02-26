@@ -3721,6 +3721,9 @@
 
     
 
+    <div id="google_translate_element"></div>
+
+
 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script>
   function googleTranslateElementInit() {
@@ -3730,13 +3733,12 @@
   window.onload = function() {
     googleTranslateElementInit();
     setTimeout(function() {
-      var languageSelect = document.querySelector('.goog-te-combo');
+      var languageSelect = document.querySelector('#google_translate_element');
       languageSelect.value = 'hi'; // Set Hindi as the default translation language
       languageSelect.dispatchEvent(new Event('change')); // Dispatch change event to trigger translation
     }, 1000);
   };
 </script>
-
   <script>
               </script>
     <script src="webpack/analytics.2edefc668ab4db842c41.js"></script>
